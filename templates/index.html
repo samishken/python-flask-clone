@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>FlaskReddit - Home</title>
+<style>
+  body {
+    background: #dae0e6 !important;
+    margin-top: 75px !important;
+  }
+</style>
+{% endblock %}
+
+{% block body %}
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" style="background-color: #fff !important;">
+  <div class="container">
+    <a class="navbar-brand" href="/">FlaskReddit</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <form class="mx-2 my-auto d-inline w-100" style="margin-left: 100px !important; margin-right: 100px !important;">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    </form>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item btn btn-outline-primary mx-2" href="/login">Login</a>
+        <a class="nav-item btn btn-primary" href="/signup">Signup</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-header">
+          <strong>
+            <button class="btn btn-light btn-sm">
+              <i class="fas fa-arrow-up"></i>
+            </button>
+            10.5k
+            <button class="btn btn-light btn-sm">
+              <i class="fas fa-arrow-down"></i>
+            </button>
+          </strong> r/Flask <span class="text-muted" style="font-size: 10pt;">Posted by u/Fulano 5 hours ago</span>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Learning Python Flask</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias molestiae, culpa non vero doloremque accusantium quibusdam beatae cupiditate ipsum quia quod quisquam quam vel incidunt nostrum esse! Cum, rerum corrupti!
+          </p>
+        </div>
+        <div class="card-footer text-muted">
+          <a href="" class="btn btn-light btn-sm">
+            <i class="fas fa-comment">0 Comments</i>
+          </a>
+          <a href="" class="btn btn-light btn-sm">
+            <i class="fas fa-share">Share</i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">r/Popular</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, earum rerum aspernatur sit debitis deleniti molestias commodi, reiciendis voluptatum cupiditate ratione cum iure odio eius quia fugit ipsum! Necessitatibus, molestias!
+            </p>
+            <a href="/" class="btn btn-primary btn-block"> Create Post</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
